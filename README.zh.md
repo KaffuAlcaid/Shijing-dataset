@@ -74,6 +74,24 @@ Copyright (c) 2025 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
 
 ​```
 
+Shijing-dataset/
+├── README.md
+├── README.zh.md
+├── LICENSE
+├── sources.json
+├── schema/
+│   └── schema.json
+├── data/
+│   ├── feng/
+│   │   └── zhounan/
+│   │       └── guanju/
+│   ├── ya/
+│   │   ...
+│   └── song/
+│       ...
+└── tools/
+   └── validate.py
+
 ​```
 
 ## 路线图

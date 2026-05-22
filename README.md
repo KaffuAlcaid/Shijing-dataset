@@ -71,6 +71,24 @@ Source references are stored in `sources.json`:
 
 ```
 
+Shijing-dataset/
+├── README.md
+├── README.zh.md
+├── LICENSE
+├── sources.json
+├── schema/
+│   └── schema.json
+├── data/
+│   ├── feng/
+│   │   └── zhounan/
+│   │       └── guanju/
+│   ├── ya/
+│   │   ...
+│   └── song/
+│       ...
+└── tools/
+    └── validate.py
+
 ```
 
 ## Roadmap
