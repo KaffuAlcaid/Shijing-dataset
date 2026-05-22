@@ -15,8 +15,10 @@ English(README.md) | [中文版](README.zh.md)
 
 ## 许可证
 
-本数据集以 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 协议开源。
-使用须注明来源。
+## License
+
+Copyright (c) 2025 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
 
 ## 数据格式
 
@@ -98,3 +100,8 @@ Shijing-dataset/
 
 受 [chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)
 及开源古籍社区启发。
+
+## 注意
+
+如需引用本数据集，请注明：
+KaffuAlcaid, Shijing-dataset, GitHub, https://github.com/KaffuAlcaid/Shijing-dataset
