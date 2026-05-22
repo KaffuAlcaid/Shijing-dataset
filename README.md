@@ -18,8 +18,7 @@ reusable annotation schema that can be extended to other classical texts.
 
 ## License
 
-This dataset is released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-Attribution is required when using this dataset.
+Copyright (c) 2025 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Data Format
 
