@@ -24,7 +24,7 @@ Copyright (c) 2025 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
 
 每个句子对应一个JSON对象：
 
-​```json
+```json
 {
   "id": "shijing_guofeng_guanju_s001",
   "篇目": {
@@ -45,11 +45,11 @@ Copyright (c) 2025 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
     }
   ]
 }
-​```
+```
 
 文献信息统一存放于 `sources.json`：
 
-​```json
+```json
 {
   "src001": {
     "文献名": "毛诗传",
@@ -57,7 +57,7 @@ Copyright (c) 2025 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
     "朝代": "西汉"
   }
 }
-​```
+```
 
 ### 注释类型枚举
 
@@ -73,20 +73,7 @@ Copyright (c) 2025 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
 ## 目录结构
 
 ​```
-Shijing-dataset/
-├── README.md
-├── README.zh.md
-├── LICENSE
-├── sources.json
-├── schema/
-│   └── schema.json
-├── data/
-│   ├── guofeng/          # 国风
-│   ├── xiaoya/           # 小雅
-│   ├── daya/             # 大雅
-│   └── song/             # 颂
-└── tools/
-    └── validate.py       # 数据校验脚本
+
 ​```
 
 ## 路线图

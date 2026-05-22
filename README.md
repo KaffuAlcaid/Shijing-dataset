@@ -68,20 +68,10 @@ Source references are stored in `sources.json`:
 | 校勘 | Textual variants |
 
 ## Directory Structure
-Shijing-dataset/
-├── README.md
-├── README.zh.md
-├── LICENSE
-├── sources.json
-├── schema/
-│   └── schema.json
-├── data/
-│   ├── guofeng/
-│   ├── xiaoya/
-│   ├── daya/
-│   └── song/
-└── tools/
-└── validate.py
+
+```
+
+```
 
 ## Roadmap
 
