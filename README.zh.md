@@ -61,6 +61,8 @@ Copyright (c) 2025 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
 
 ### 注释类型枚举
 
+** 这里的json键和值使用中文，是为了保留中文为本项目的主体性。若有任何因为字符串比较时编码一致性问题，请您谅解。 **
+
 | 值 | 说明 |
 |---|---|
 | 训诂 | 字词本义解释 |
@@ -73,7 +75,6 @@ Copyright (c) 2025 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
 ## 目录结构
 
 ​```
-
 Shijing-dataset/
 ├── README.md
 ├── README.zh.md
@@ -91,7 +92,6 @@ Shijing-dataset/
 │       ...
 └── tools/
    └── validate.py
-
 ​```
 
 ## 路线图
@@ -106,7 +106,9 @@ Shijing-dataset/
 受 [chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)
 及开源古籍社区启发。
 
-## 注意
+## 引用
 
 如需引用本数据集，请注明：
+```
 KaffuAlcaid, Shijing-dataset, GitHub, https://github.com/KaffuAlcaid/Shijing-dataset
+```

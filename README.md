@@ -58,6 +58,8 @@ Source references are stored in `sources.json`:
 
 ### Annotation Types
 
+** The schema uses Chinese keys and values to preserve terminological fidelity to the source tradition. **
+
 | 值 | Description |
 |---|---|
 | 训诂 | Lexical exegesis |
@@ -70,7 +72,6 @@ Source references are stored in `sources.json`:
 ## Directory Structure
 
 ```
-
 Shijing-dataset/
 ├── README.md
 ├── README.zh.md
@@ -88,7 +89,6 @@ Shijing-dataset/
 │       ...
 └── tools/
     └── validate.py
-
 ```
 
 ## Roadmap
@@ -101,3 +101,11 @@ Shijing-dataset/
 ## Acknowledgements
 
 Inspired by [chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)
+
+## Citation
+
+If you use this dataset in your research, please cite:
+
+```
+KaffuAlcaid. Shijing-dataset [Data set]. GitHub. https://github.com/KaffuAlcaid/Shijing-dataset
+```
