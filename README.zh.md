@@ -112,3 +112,13 @@ Shijing-dataset/
 ```
 KaffuAlcaid, Shijing-dataset, GitHub, https://github.com/KaffuAlcaid/Shijing-dataset
 ```
+或者
+```bibtex
+@misc{shijing-dataset,
+  author    = {KaffuAlcaid},
+  title     = {Shijing-dataset},
+  year      = {2026},
+  publisher = {GitHub},
+  url       = {https://github.com/KaffuAlcaid/Shijing-dataset}
+}
+```

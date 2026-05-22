@@ -105,7 +105,17 @@ Inspired by [chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)
 ## Citation
 
 If you use this dataset in your research, please cite:
-
 ```
 KaffuAlcaid. Shijing-dataset [Data set]. GitHub. https://github.com/KaffuAlcaid/Shijing-dataset
 ```
+or
+```bibtex
+@misc{shijing-dataset,
+  author    = {KaffuAlcaid},
+  title     = {Shijing-dataset},
+  year      = {2026},
+  publisher = {GitHub},
+  url       = {https://github.com/KaffuAlcaid/Shijing-dataset}
+}
+```
+
