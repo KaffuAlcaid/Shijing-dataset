@@ -1,6 +1,6 @@
 # Shijing-dataset
 
-English(README.md) | [中文版](README.zh.md)
+English | [中文版](README.zh.md)
 
 《诗经》校注结构化数据集 | A Structured Annotation Dataset for the Book of Songs
 
