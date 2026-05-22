@@ -2,18 +2,15 @@
 
 [中文版](README.zh.md) | English
 
-A structured annotation dataset for the Book of Songs (《诗经》), 
+A structured annotation dataset for the Book of Songs (《诗经》),
 designed for NLP research and AI training.
 
 ## Why This Project
 
-Current AI models perform poorly on classical Chinese texts. The root cause
-is simple: training corpora contain almost no structured annotation data —
-only raw text, with the layers of 训诂 (exegesis) and 笺注 (commentary)
-nearly absent.
+Current AI models perform poorly on classical Chinese texts. The root cause is simple: training corpora contain almost no structured annotation data — only raw text, with the layers of 训诂 (exegesis) and 笺注 (commentary) nearly absent.
 
-This project takes the Book of Songs as a starting point, building a
-reusable annotation schema that can be extended to other classical texts.
+This project takes the Book of Songs as a starting point, building a reusable annotation schema that can be extended to other classical texts.
+
 抛砖引玉 — a humble beginning, hoping others will follow.
 
 ## License
@@ -24,7 +21,7 @@ Copyright (c) 2025 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
 
 Each sentence corresponds to one JSON object:
 
-​```json
+```json
 {
   "id": "shijing_guofeng_guanju_s001",
   "篇目": {
@@ -45,11 +42,11 @@ Each sentence corresponds to one JSON object:
     }
   ]
 }
-​```
+```
 
 Source references are stored in `sources.json`:
 
-​```json
+```json
 {
   "src001": {
     "文献名": "毛诗传",
@@ -57,7 +54,7 @@ Source references are stored in `sources.json`:
     "朝代": "西汉"
   }
 }
-​```
+```
 
 ### Annotation Types
 
@@ -71,8 +68,6 @@ Source references are stored in `sources.json`:
 | 校勘 | Textual variants |
 
 ## Directory Structure
-
-​```
 Shijing-dataset/
 ├── README.md
 ├── README.zh.md
@@ -86,8 +81,7 @@ Shijing-dataset/
 │   ├── daya/
 │   └── song/
 └── tools/
-    └── validate.py
-​```
+└── validate.py
 
 ## Roadmap
 
@@ -99,4 +93,3 @@ Shijing-dataset/
 ## Acknowledgements
 
 Inspired by [chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)
-and the broader open-source classical Chinese community.
