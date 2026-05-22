@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["id", "篇目", "校勘文", "注释"],
+  "properties": {
+    "id": { "type": "string" },
+    "篇目": {
+      "type": "object",
+      "required": ["书", "卷", "篇", "序号"],
+      "properties": {
+        "书":  { "type": "string" },
+        "卷":  { "type": "string" },
+        "篇":  { "type": "string" },
+        "序号": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "校勘文": { "type": "string" },
+    "注释": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "anchor", "粒度", "文献id", "注释类型", "内容"],
+        "properties": {
+          "id":     { "type": "string" },
+          "anchor": { "type": "string" },
+          "粒度":   { "type": "string", "enum": ["字", "词", "句"] },
+          "文献id": { "type": "string" },
+          "注释类型": {
+            "type": "string",
+            "enum": ["训诂", "笺注", "句义", "考证", "音韵", "校勘"]
+          },
+          "内容": { "type": "string" }
+        }
+      }
+    }
+  }
+}
