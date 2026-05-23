@@ -77,7 +77,7 @@ Source references are stored in `sources.json`:
 
 ### Annotation Types
 
-*** The schema uses Chinese keys and values to preserve terminological fidelity to the source tradition. ***
+The schema uses Chinese keys and values to preserve terminological fidelity to the source tradition. 
 
 | 值 | Description |
 |---|---|
