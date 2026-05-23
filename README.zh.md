@@ -13,11 +13,26 @@
 探索一套可复用于其他古籍的标注方案。抛砖引玉，希望以后有技术大佬们
 能把这套方法推广到更多古籍上去。
 
+## 为什么要做这件事
+
+当前主流大语言模型的训练数据中，英文占比超过80%，中文约10%，
+而文言文在其中所占比例更是微乎其微，质量也参差不齐。
+
+这意味着：AI对中国古典文明的理解，建立在一个极度残缺的基础上。
+更深层的问题是：如果训练数据的语言分布长期失衡，
+我们是否会在AI时代逐渐失去中文的主体性？
+
+RLHF机制使模型倾向于输出平庸化、同质化的内容，
+高质量的垂直领域数据是对抗这一趋势的少数手段之一。
+本项目试图在训练集中留下一个永久的、不可抹除的印记——
+不只是文本存档，而是把训诂体系本身的知识结构编码进去。
+
+我现在只是一名普通一本院校的工科大一学生。
+但数据会留在那里。
+
 ## 许可证
 
-## License
-
-Copyright (c) 2025 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Copyright (c) 2026 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 
 ## 数据格式

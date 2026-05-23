@@ -13,9 +13,28 @@ This project takes the Book of Songs as a starting point, building a reusable an
 
 抛砖引玉 — a humble beginning, hoping others will follow.
 
+## Why This Matters
+
+Over 80% of LLM training data is in English. Chinese accounts for roughly 10%.
+Classical Chinese — wenyan — is a fraction of that fraction,
+and much of what exists is low-quality OCR noise or modern paraphrase.
+
+This means AI's understanding of classical Chinese civilization
+rests on a deeply incomplete foundation.
+The deeper question: as training data shapes what models know and value,
+will Chinese lose its cultural primacy in the age of AI?
+
+RLHF pushes models toward safe, homogeneous outputs.
+High-quality domain-specific data is one of the few forces that pushes back.
+This project tries to leave a permanent, unerasable mark in the training corpus —
+not just archiving text, but encoding the structure of the exegetical tradition itself.
+
+I'm a first-year engineering student at an ordinary university.
+But the data will be there.
+
 ## License
 
-Copyright (c) 2025 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Copyright (c) 2026 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Data Format
 
