@@ -1,99 +1,78 @@
-
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "required": [
-    "id",
-    "篇目",
-    "校勘文",
-    "注释"
-  ],
+  "required": ["id", "篇目", "校勘文", "注释"],
   "properties": {
     "id": {
-      "type": "string"
+      "type": "string",
+      "description": "句子唯一标识符，格式如 shijing_guofeng_zhounan_guanju_s001"
     },
     "篇目": {
       "type": "object",
-      "required": [
-        "书",
-        "卷",
-        "篇",
-        "序号"
-      ],
+      "required": ["书", "卷", "篇", "序号"],
       "properties": {
-        "书": {
-          "type": "string"
-        },
-        "卷": {
-          "type": "string"
-        },
-        "篇": {
-          "type": "string"
-        },
-        "序号": {
-          "type": "integer",
-          "minimum": 1
-        }
-      }
+        "书": { "type": "string" },
+        "卷": { "type": "string" },
+        "篇": { "type": "string" },
+        "序号": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
     },
     "校勘文": {
-      "type": "string"
+      "type": "string",
+      "description": "该句经文原文，含标点"
+    },
+    "今译": {
+      "type": "string",
+      "description": "可选。校勘文的现代汉语翻译，以程俊英《诗经译注》为准"
+    },
+    "注音": {
+      "type": "string",
+      "description": "可选。校勘文的汉语拼音注音（含声调），标点不标注，词间以空格分隔"
     },
     "注释": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": [
-          "id",
-          "anchor",
-          "粒度",
-          "文献id",
-          "注释类型",
-          "内容"
-        ],
+        "required": ["id", "anchor", "粒度", "文献id", "注释类型", "内容"],
         "properties": {
           "id": {
-            "type": "string"
+            "type": "string",
+            "description": "句内局部编号，从 n001 开始，每句独立递增"
           },
           "anchor": {
-            "type": "string"
+            "type": "string",
+            "description": "被注释的字、词或句，必须是校勘文（不含标点）的连续子串"
           },
           "span": {
             "type": "array",
-            "items": {
-              "type": "integer"
-            },
+            "items": { "type": "integer" },
             "minItems": 2,
             "maxItems": 2,
-            "description": "可选。anchor在校勘文中的字符偏移 [start, end)，仅在anchor重复出现时填写"
+            "description": "可选。anchor 在校勘文中的字符偏移 [start, end)，从 0 开始计数，标点计入偏移。仅在 anchor 于校勘文中重复出现时填写"
           },
           "粒度": {
             "type": "string",
-            "enum": [
-              "字",
-              "词",
-              "句"
-            ]
+            "enum": ["字", "词", "句"]
           },
-           "文献id": {
+          "文献id": {
             "type": "string",
-            "description": "来源文献的编号，对应 github.com/KaffuAlcaid/Shijing-dataset/source.json 中的「编号」字段（如 scr001 = 毛诗正义）"
+            "description": "来源文献编号，对应 source.json 的顶层 key（如 src001 = 毛诗正义武英殿本）"
           },
           "注释类型": {
             "type": "string",
-            "enum": [
-              "训诂",
-              "笺注",
-              "句义",
-              "考证",
-              "音韵",
-              "校勘"
-            ]
+            "enum": ["训诂", "笺注", "句义", "考证", "音韵", "校勘"]
           },
           "内容": {
-            "type": "string"
+            "type": "string",
+            "description": "从源文献节选的注释原文，不得意译或改写"
+          },
+          "注音_存疑": {
+            "type": "boolean",
+            "description": "可选。该 anchor 读音存在破读或争议时标记为 true，默认省略"
           }
-        }
+        },
+        "additionalProperties": false
       }
     }
   }
