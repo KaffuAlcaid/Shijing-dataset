@@ -101,7 +101,7 @@ Shijing-dataset/
 ├── data/
 │   ├── feng/
 │   │   └── zhounan/
-│   │       └── guanju/
+│   │       └── guanju.json
 │   ├── ya/
 │   │   ...
 │   └── song/
@@ -112,9 +112,9 @@ Shijing-dataset/
 
 ## Roadmap
 
-- [ ] 国风 — complete source text entry
-- [ ] 国风 — Mao Commentary (毛传) annotations
-- [ ] 国风 — Zheng Commentary (郑笺) annotations
+- [ ] 周南 — complete 
+- [ ] 风 — complete
+- [ ] 诗经 — complete
 - [ ] Extend schema to other pre-Qin classics
 
 ## Acknowledgements

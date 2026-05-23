@@ -89,7 +89,7 @@ Copyright (c) 2026 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
 
 ## 目录结构
 
-​```
+```
 Shijing-dataset/
 ├── README.md
 ├── README.zh.md
@@ -100,20 +100,20 @@ Shijing-dataset/
 ├── data/
 │   ├── feng/
 │   │   └── zhounan/
-│   │       └── guanju/
+│   │       └── guanju.json
 │   ├── ya/
 │   │   ...
 │   └── song/
 │       ...
 └── tools/
-   └── validate.py
-​```
+    └── validate.py
+```
 
 ## 路线图
 
-- [ ] 完成国风原文录入
-- [ ] 完成国风毛传注释
-- [ ] 完成国风郑笺注释
+- [ ] 完成周南录入
+- [ ] 完成风录入
+- [ ] 完成诗经录入
 - [ ] 推广至其他先秦典籍
 
 ## 致谢
