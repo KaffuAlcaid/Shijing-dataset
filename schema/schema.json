@@ -75,8 +75,9 @@
               "句"
             ]
           },
-          "文献id": {
-            "type": "string"
+           "文献id": {
+            "type": "string",
+            "description": "来源文献的编号，对应 github.com/KaffuAlcaid/Shijing-dataset/source.json 中的「编号」字段（如 scr001 = 毛诗正义）"
           },
           "注释类型": {
             "type": "string",
