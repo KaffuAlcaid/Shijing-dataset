@@ -155,6 +155,9 @@ Shijing-dataset/
 └── tools/
     └── validate.py
 ```
+## 如何加入我们的工作？
+
+详情请见: [WORKFLOW.zh.md](WORKFLOW.zh.md)
 
 ## 路线图
 
@@ -164,6 +167,8 @@ Shijing-dataset/
 - [ ] 推广至其他先秦典籍
 
 ## 致谢
+
+此为贡献者名单，详情请见：[CONTRIBUTORS.zh.md](CONTRIBUTORS.zh.md)
 
 受 [chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)
 及开源古籍社区启发。

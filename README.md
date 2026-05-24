@@ -147,6 +147,10 @@ Shijing-dataset/
     └── validate.py
 ```
  
+ ## How to Contribute
+
+Full details in [WORKFLOW.md](WORKFLOW.md) 
+
 ## Roadmap
  
 - [ ] 周南 — complete 
@@ -154,6 +158,8 @@ Shijing-dataset/
 - [ ] 诗经 — complete
 - [ ] Extend schema to other pre-Qin classics
 ## Acknowledgements
+ 
+ See [CONTRIBUTORS.md](CONTRIBUTORS.md) to record your contribution.
  
 Inspired by [chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)
  
