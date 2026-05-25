@@ -1,0 +1,77 @@
+name: Auto Format JSON
+
+on:
+  push:
+    paths:
+      - 'data/**/*.json'
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: '对 data/ 下全部 JSON 执行格式化，输入 yes 确认'
+        required: true
+        default: 'no'
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Abort if not confirmed (manual trigger only)
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.confirm != 'yes'
+        run: |
+          echo "::error::请输入 yes 确认执行全量格式化。"
+          exit 1
+
+      - name: Get target files
+        id: targets
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # 手动触发：全量
+            FILES=$(find data/ -name "*.json" | tr '\n' ' ')
+            echo "mode=full" >> $GITHUB_OUTPUT
+          else
+            # 自动触发：仅本次 push 改动的文件
+            FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} \
+              | grep '^data/.*\.json$' | tr '\n' ' ' || true)
+            echo "mode=incremental" >> $GITHUB_OUTPUT
+          fi
+          echo "files=$FILES" >> $GITHUB_OUTPUT
+          echo "Target files: $FILES"
+
+      - name: Format JSON files
+        if: steps.targets.outputs.files != ''
+        run: |
+          FAILED=0
+          for f in ${{ steps.targets.outputs.files }}; do
+            if [ -f "$f" ]; then
+              python tools/format.py "$f" || FAILED=1
+            fi
+          done
+          if [ $FAILED -ne 0 ]; then
+            echo "::error::部分 JSON 文件格式化失败，原文件未被修改。"
+            exit 1
+          fi
+
+      - name: Commit formatted files
+        if: steps.targets.outputs.files != ''
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "所有文件已是标准格式，无需提交。"
+          else
+            MODE=${{ steps.targets.outputs.mode }}
+            git commit -m "style: auto-format JSON ($MODE) [skip ci]"
+            git push
+          fi
