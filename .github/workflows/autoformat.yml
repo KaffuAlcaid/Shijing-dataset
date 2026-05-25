@@ -54,7 +54,7 @@ jobs:
           FAILED=0
           for f in ${{ steps.targets.outputs.files }}; do
             if [ -f "$f" ]; then
-              python tools/format.py "$f" || FAILED=1
+              python tool/format.py "$f" || FAILED=1
             fi
           done
           if [ $FAILED -ne 0 ]; then
