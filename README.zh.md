@@ -91,7 +91,7 @@ Copyright (c) 2026 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
 ### 句子对象（顶层）
 
 | 字段 | 类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `id` | string | ✅ | 句子唯一标识符。格式：`shijing_{卷}_{子卷}_{篇}_s{NNN}`，如 `shijing_guofeng_zhounan_guanju_s001` |
 | `篇目` | object | ✅ | 篇章定位信息，见下表 |
 | `校勘文` | string | ✅ | 该句经文校勘文，含标点 |
@@ -102,7 +102,7 @@ Copyright (c) 2026 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
 ### 篇目字段
 
 | 字段 | 类型 | 说明 |
-|---|---|---|
+| --- | --- | --- |
 | `书` | string | 典籍名称，如 `诗经` |
 | `卷` | string | 大类，如 `国风`、`小雅`、`大雅`、`颂` |
 | `篇` | string | 篇名，如 `关雎` |
@@ -111,7 +111,7 @@ Copyright (c) 2026 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
 ### 注释条目（注释数组的每一项）
 
 | 字段 | 类型 | 必填 | 说明 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `id` | string | ✅ | 句内局部编号，从 `n001` 开始，每句独立重置 |
 | `anchor` | string | ✅ | 被注释的字、词或句，必须是 `校勘文`（不含标点）的连续子串 |
 | `span` | [int, int] | ❌ | `anchor` 在 `校勘文` 中的字符偏移 `[start, end)`，从 0 起计，标点计入偏移。仅当同一 `anchor` 在 `校勘文` 中重复出现时填写 |
@@ -126,7 +126,7 @@ Copyright (c) 2026 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
 这里的JSON键和值使用中文，是为了保留中文为本项目的主体性。若有任何因为字符串比较时编码一致性问题，请您谅解。
 
 | 值 | 说明 |
-|---|---|
+| --- | --- |
 | 训诂 | 字词本义解释（毛传） |
 | 笺注 | 对前人注释的延展（郑笺） |
 | 句义 | 整句语义解释 |
@@ -136,7 +136,7 @@ Copyright (c) 2026 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
 
 ## 目录结构
 
-```
+```structure
 Shijing-dataset/
 ├── README.md
 ├── README.zh.md
@@ -178,7 +178,7 @@ Shijing-dataset/
 
 如需引用本数据集，请注明：
 
-```
+```text
 KaffuAlcaid, Shijing-dataset, GitHub, https://github.com/KaffuAlcaid/Shijing-dataset
 ```
 
