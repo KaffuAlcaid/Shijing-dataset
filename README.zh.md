@@ -78,7 +78,7 @@ Copyright (c) 2026 KaffuAlcaid. This dataset is licensed under [CC BY 4.0](https
 {
   "src001": {
     "文献名": "毛诗正义",
-    "作者": "毛亨传，郑玄笺，孔颖达疏",
+    "作者": "毛亨（传），郑玄（笺），孔颖达（疏）",
     "朝代": "唐",
     "版本": "武英殿十三经注疏本",
     "来源": "https://ctext.org/wiki.pl?if=gb&res=871901"
@@ -155,6 +155,7 @@ Shijing-dataset/
 └── tools/
     └── validate.py
 ```
+
 ## 如何加入我们的工作？
 
 详情请见: [WORKFLOW.zh.md](WORKFLOW.zh.md)
@@ -162,7 +163,7 @@ Shijing-dataset/
 ## 路线图
 
 - [ ] 完成周南录入
-- [ ] 完成风录入
+- [ ] 完成国风录入
 - [ ] 完成诗经录入
 - [ ] 推广至其他先秦典籍
 
@@ -176,10 +177,13 @@ Shijing-dataset/
 ## 引用
 
 如需引用本数据集，请注明：
+
 ```
 KaffuAlcaid, Shijing-dataset, GitHub, https://github.com/KaffuAlcaid/Shijing-dataset
 ```
+
 或者
+
 ```bibtex
 @misc{shijing-dataset,
   author    = {KaffuAlcaid},

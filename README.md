@@ -69,7 +69,7 @@ Source references are stored in `source.json`:
 {
   "src001": {
     "文献名": "毛诗正义",
-    "作者": "毛亨传，郑玄笺，孔颖达疏",
+    "作者": "毛亨（传），郑玄（笺），孔颖达（疏）",
     "朝代": "唐",
     "版本": "武英殿十三经注疏本",
     "来源": "https://ctext.org/wiki.pl?if=gb&res=871901"
@@ -154,7 +154,7 @@ Full details in [WORKFLOW.md](WORKFLOW.md)
 ## Roadmap
  
 - [ ] 周南 — complete 
-- [ ] 风 — complete
+- [ ] 国风 — complete
 - [ ] 诗经 — complete
 - [ ] Extend schema to other pre-Qin classics
 ## Acknowledgements
@@ -166,10 +166,13 @@ Inspired by [chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)
 ## Citation
  
 If you use this dataset in your research, please cite:
+
 ```
 KaffuAlcaid. Shijing-dataset [Data set]. GitHub. https://github.com/KaffuAlcaid/Shijing-dataset
 ```
+
 or
+
 ```bibtex
 @misc{shijing-dataset,
   author    = {KaffuAlcaid},
