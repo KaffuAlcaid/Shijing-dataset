@@ -4,9 +4,9 @@
 
 ---
 
-## 概览(并非真实木板)
+## 概览(并非真实模板)
 
-```
+```text
 ctext.org 原文
      ↓
 手工整理为 txt（输入文件）
@@ -28,7 +28,7 @@ render.py 渲染为 Markdown（可读性审阅）
 
 逐篇复制原文，整理为如下 txt 格式。每句以 `---` 分隔：
 
-```
+```json
 句子id：shijing_guofeng_zhounan_getan_s001
 校勘文：
 葛之覃兮，施于中谷，维叶萋萋
@@ -43,12 +43,12 @@ render.py 渲染为 Markdown（可读性审阅）
 
 **id 命名规则：**
 
-```
+```json
 shijing_{卷}_{子卷}_{篇}_s{NNN}
 ```
 
 | 卷 | 拼音 |
-|---|---|
+| --- | --- |
 | 国风 | guofeng |
 | 小雅 | xiaoya |
 | 大雅 | daya |
