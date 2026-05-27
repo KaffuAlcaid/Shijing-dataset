@@ -5,7 +5,7 @@ This file records each contributor's specific work on the dataset, organized by 
 ## Contribution Types
 
 | Code | Meaning |
-|---|---|
+| --- | --- |
 | E | Source text extraction (txt preparation) |
 | A | AI annotation extraction |
 | R | Human review (content verification) |
@@ -19,29 +19,29 @@ Date is based on commit or Pull Request submission time. Format: `YYYY-MM-DD`.
 ## Guofeng · Zhounan (国风 · 周南)
 
 | Poem | Type | Contributor | Date | Notes |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | 关雎 | E, A, R | KaffuAlcaid | 2026-05-24 | Initial version, schema established |
 | 葛覃 | E, A, R | KaffuAlcaid | 2026-05-24 | |
 
 ## Guofeng · Zhaonan (国风 · 召南)
 
 | Poem | Type | Contributor | Date | Notes |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 
 ## Xiaoya (小雅)
 
 | Poem | Type | Contributor | Date | Notes |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 
 ## Daya (大雅)
 
 | Poem | Type | Contributor | Date | Notes |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 
 ## Song (颂)
 
 | Poem | Type | Contributor | Date | Notes |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 
 ---
 
