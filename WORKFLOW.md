@@ -6,7 +6,7 @@ This document describes the complete pipeline from raw source text to structured
 
 ## Overview
 
-```
+```txt
 ctext.org source text
      ↓
 Manual txt preparation
@@ -28,7 +28,7 @@ Source: [Mao Shi Zhengyi (Wuyingdian Shisanjing Zhushu edition)](https://ctext.o
 
 Copy the text poem by poem and organize into the following txt format. Separate each sentence with `---`:
 
-```
+```txt
 句子id：shijing_guofeng_zhounan_getan_s001
 校勘文：
 葛之覃兮，施于中谷，维叶萋萋
@@ -43,12 +43,12 @@ Copy the text poem by poem and organize into the following txt format. Separate 
 
 **ID naming convention:**
 
-```
+```txt
 shijing_{section}_{subsection}_{poem}_s{NNN}
 ```
 
 | Section | Pinyin |
-|---|---|
+| --- | --- |
 | 国风 | guofeng |
 | 小雅 | xiaoya |
 | 大雅 | daya |
@@ -64,7 +64,7 @@ Sentence index `s001` starts from 001, reset per poem.
 
 Feed the txt into DeepSeek R1 (Expert Mode) using the following prompt:
 
-````
+````md
 You are a specialist assistant in pre-Qin classical texts, familiar with the Book of Songs and its traditional commentaries.
 
 ## Task
@@ -124,7 +124,7 @@ Each entry contains:
 After AI output, check each entry for the following:
 
 | Check | Common errors |
-|---|---|
+| --- | --- |
 | anchor is a substring of 校勘文 | Commentary text mixed in; punctuation included |
 | 内容 is verbatim | Paraphrase, merging, truncation |
 | Mao/Zheng separation is correct | Unlabeled entries misclassified as 笺注 |
@@ -162,7 +162,7 @@ Generates a human-readable Markdown file for non-technical collaborators. No JSO
 
 ## File Naming Convention
 
-```
+```txt
 data/
 ├── feng/
 │   ├── zhounan/
@@ -180,7 +180,7 @@ data/
 ## Quick Reference
 
 | Field | Required | Description |
-|---|---|---|
+| --- | --- | --- |
 | id | ✅ | Local n001+, reset per sentence |
 | anchor | ✅ | Substring of 校勘文, no punctuation |
 | span | ❌ | Fill when anchor repeats in 校勘文 |
