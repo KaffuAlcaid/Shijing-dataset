@@ -153,7 +153,7 @@ Full details in [WORKFLOW.md](WORKFLOW.md)
 
 ## Roadmap
   
-- [ ] 周南 — complete  
+- [x] 周南 — complete  
 - [ ] 国风 — complete
 - [ ] 诗经 — complete
 - [ ] Extend schema to other pre-Qin classics  
