@@ -21,7 +21,8 @@ Date is based on commit or Pull Request submission time. Format: `YYYY-MM-DD`.
 | Poem | Type | Contributor | Date | Notes |
 | --- | --- | --- | --- | --- |
 | 关雎 | E, A, R | KaffuAlcaid | 2026-05-24 | Initial version, schema established |
-| 葛覃 | E, A, R | KaffuAlcaid | 2026-05-24 | |
+| 葛覃 | E, A, R | KaffuAlcaid | 2026-05-24 |  |
+| 卷耳 | E, A, R | Kaffu_Alcaid | 2026-05-27 |  |
 
 ## Guofeng · Zhaonan (国风 · 召南)
 
